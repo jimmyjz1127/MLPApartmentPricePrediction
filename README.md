@@ -4,9 +4,28 @@
 This project aims to implement a number of approaches for the regression task of predicting housing prices for a given dataset.
 The following are implemented:  
 1) Data Pre-processing pipeline containing feature pruning, imputation strategies, numerical standardization, one-hot encoding, dimension reduction
-2) A number of regression models using Scikit-Learn 
-3) A fully connected feedforward muli-layer perceptron using PyTorch
-4) Evaluation 
+2) Fully connected feedforward multi-layer perceptron using PyTorch
+3) K-Nearest-Neighbour Model using Numpy
+4) Gaussian Mixture Model using Numpy
+
+## Regression Approach
+### MLP Neural Network
+Implements a basic 4-layer fully connected perceptron outputting a single scalar for the regression task.  
+
+Hyperparameters 
+1) Number of Epochs 
+2) Batch Size
+3) Learning Rate
+4) Loss Function
+5) Optimizer
+
+### K Nearest Neighbour
+Use KNN to cluster training data into K clusters. For each new datapoint, identify cluster that datapoint belongs to and predict as its price, the average/weighted-average of that cluster.
+
+Distance metrics used are : cosine similarity and euclidian
+
+### Gaussian Mixture Model
+Similar approach to KNN except using Gaussian Mixture Model for clustering. Rather than utilise a distance metric, the cluster chosen for a new datapoint will be based on which cluster has the highest responsibility (probability of explaining the datapoint). Cluster means/weighted averages are used for prediciton.
 
 ## Dataset 
 |Feature|Description|
