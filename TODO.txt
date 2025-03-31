@@ -1,0 +1,3 @@
+1. Implement fine-tuning for k-means 
+2. Implement DB Scan unsupervised regression
+3. Implement another mixture model with different distribution (maybe laplace)
